@@ -53,10 +53,10 @@ def main():
     driver.get("https://ruppenthal.com/shop")
 
     username_input = driver.find_element(By.NAME, 'username')
-    username_input.send_keys("ruppenthal@daniel-abt.de")
+    username_input.send_keys("email")
 
     password_input = driver.find_element(By.NAME, 'password')
-    password_input.send_keys("60Diamanten60")
+    password_input.send_keys("password")
 
     login_button = driver.find_element("xpath", "//button[contains(@class, 'uk-float-left') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]")
     login_button.click()
